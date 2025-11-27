@@ -50,7 +50,7 @@ public List deserializarObjeto(String archivo,List<T> deserializado){
         FileInputStream fis = new FileInputStream(archivo);
         ois = new ObjectInputStream(fis);
         deserializado = (List)ois.readObject();
-        System.out.println(" persona deserializada correctamente");
+        System.out.println("  deserializado correctamente");
         
         
     }catch(FileNotFoundException e){

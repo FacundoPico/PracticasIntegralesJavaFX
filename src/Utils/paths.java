@@ -9,5 +9,8 @@ package Utils;
  * @author Facun
  */
 public class paths {
-    public static String VistaReserva = "/views/AdministradorDeTareas.fxml";
+    public static String VistaReserva = "/views/VistaHabitaciones.fxml";
+    public static String VistaHistorial = "/views/VistaHistoriaReserva.fxml";
+
+    
 }

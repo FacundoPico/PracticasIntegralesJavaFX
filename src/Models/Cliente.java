@@ -16,24 +16,30 @@ public class Cliente implements Serializable{
     private int dni;
 
     public Cliente(String nombre, int dni) {
-        this.nombre = nombre;
-        this.dni = dni;
+         setNombre(nombre);
+        setDni(dni);
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    private void setNombre(String nombre) {
+        if(!nombre.isEmpty()){
         this.nombre = nombre;
+        }else{
+            System.out.println("Incorrecto");
+        }
     }
 
     public int getDni() {
         return dni;
     }
 
-    public void setDni(int dni) {
+    private void setDni(int dni) {
+        if(dni != 0){
         this.dni = dni;
+        }
     }
     
     

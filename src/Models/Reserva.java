@@ -33,8 +33,18 @@ public class Reserva implements Serializable{
         
         
     }
+public String getNombre() {
+        return cliente.getNombre();
+    }
 
-    
+    public int getNumeroHab() {
+        return habitacion.getNumeroHab();   // Ajustalo según el nombre real
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+  
  
     
     
